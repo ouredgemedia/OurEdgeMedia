@@ -25,6 +25,10 @@
  *    - Execute as: "Me" (Aapki Gmail id)
  *    - Who has access: "Anyone" (Bina login kiye har koi form submit kar sake)
  * 
+ *    IMPORTANT: Code badalne ke baad hamesha "Deploy" -> "Manage deployments" ->
+ *    pencil (Edit) icon -> Version: "New version" -> "Deploy" karein.
+ *    Warna purana code hi chalta rahega (error: "Script function not found").
+ *
  * 7. "Deploy" button par click karein (Google authorization permission maange toh Allow karein).
  * 
  * 8. Aapko ek "Web app URL" milega (https://script.google.com/macros/s/.../exec).
@@ -36,6 +40,9 @@
  */
 
 function doPost(e) {
+  // Lock so simultaneous submissions never overwrite each other
+  var lock = LockService.getScriptLock();
+  lock.waitLock(20000);
   try {
     var sheetId = "1j11WN6BBb75lK5c1h86FZ-3X_loliBpskUBaMtPBAd4";
     var ss = SpreadsheetApp.openById(sheetId);
@@ -61,24 +68,26 @@ function doPost(e) {
       ]);
       sheet.appendRow([
         timestamp,
-        data.name || "",
-        data.mobile || data.phone || "",
-        data.location || "",
-        data.brand || "",
-        data.workType || data.work || ""
+        clean(data.name),
+        clean(data.mobile || data.phone),
+        clean(data.location),
+        clean(data.brand),
+        clean(data.workType || data.work)
       ]);
 
     } else if (formType.indexOf("contact") !== -1 || formType.indexOf("message") !== -1) {
       // 2. CONTACT US (SEND MESSAGE) TAB
       var sheet = getOrCreateTab(ss, "Contact Messages", [
-        "Timestamp", "Name", "Email", "Subject", "Message"
+        "Timestamp", "Name", "Email", "Subject", "Message", "Phone", "Page"
       ]);
       sheet.appendRow([
         timestamp,
-        data.name || "",
-        data.email || "",
-        data.subject || "",
-        data.message || ""
+        clean(data.name),
+        clean(data.email),
+        clean(data.subject),
+        clean(data.message),
+        clean(data.phone),
+        clean(data.page)
       ]);
 
     } else if (formType.indexOf("chat") !== -1) {
@@ -88,8 +97,8 @@ function doPost(e) {
       ]);
       sheet.appendRow([
         timestamp,
-        data.query || data.message || "",
-        data.reply || ""
+        clean(data.query || data.message),
+        clean(data.reply)
       ]);
 
     } else {
@@ -113,7 +122,16 @@ function doPost(e) {
   } catch (error) {
     return ContentService.createTextOutput(JSON.stringify({ status: "error", error: error.toString() }))
       .setMimeType(ContentService.MimeType.JSON);
+  } finally {
+    lock.releaseLock();
   }
+}
+
+// Helper: trims input and blocks spreadsheet formula injection (=, +, -, @)
+function clean(value) {
+  var v = (value === undefined || value === null) ? "" : String(value).trim();
+  if (/^[=+\-@]/.test(v)) v = "'" + v;
+  return v;
 }
 
 function doGet(e) {
@@ -143,6 +161,13 @@ function getOrCreateTab(ss, tabName, headers) {
     for (var i = 1; i <= headers.length; i++) {
       sheet.setColumnWidth(i, 180);
     }
+  } else if (sheet.getLastColumn() < headers.length) {
+    // Tab already exists from an older version: add any new header columns
+    var start = sheet.getLastColumn() + 1;
+    var extra = headers.slice(start - 1);
+    var range = sheet.getRange(1, start, 1, extra.length);
+    range.setValues([extra]);
+    range.setBackground("#FFD400").setFontColor("#111111").setFontWeight("bold").setHorizontalAlignment("center");
   }
   return sheet;
 }

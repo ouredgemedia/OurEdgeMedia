@@ -1,52 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ouredgemedia.com/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ouredgemedia.com/index.html</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/og-image.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/editing.webp</image:loc></image:image>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/shoot.webp</image:loc></image:image>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/graphic-design.webp</image:loc></image:image>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/social-media.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ouredgemedia.com/services.html</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ouredgemedia.com/Pricing.html</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/video-editing-services-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/social-media-marketing-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/reels-editing-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/ad-video-production-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/graphic-design-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/local-seo-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ouredgemedia.com/Portfolio.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/shoot.webp</image:loc></image:image>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/graphic-design.webp</image:loc></image:image>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/social-media.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://ouredgemedia.com/about.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ouredgemedia.com/OurTeam.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/IMG_3922.webp</image:loc></image:image>
+    <image:image><image:loc>https://ouredgemedia.com/assets/images/anjali.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/RegistrationForm.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/festival-marketing-calendar-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ouredgemedia.com/RegistrationForm.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <loc>https://ouredgemedia.com/blog/restaurant-cafe-marketing-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/coaching-institute-marketing-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/real-estate-video-marketing-gorakhpur.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/instagram-marketing-gorakhpur-get-more-customers.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/reels-not-getting-views-gorakhpur.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/google-maps-ranking-gorakhpur-business.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/hire-video-editor-gorakhpur-guide.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/social-media-marketing-cost-gorakhpur.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ouredgemedia.com/blog/low-budget-video-ads-gorakhpur.html</loc>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
-

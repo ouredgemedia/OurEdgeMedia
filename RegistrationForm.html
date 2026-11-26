@@ -1,489 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-IN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Edge Media | Client Application & Registration</title>
-    
-    <!-- PRIMARY SEO META TAGS -->
-    <meta name="description" content="Apply to work with Our Edge Media. Register your brand or channel for high-retention video editing and social media management services.">
-    <meta name="keywords" content="join our edge media, hire video editor, client application, register brand, our edge media form">
-    <meta name="author" content="Abhishek Rajbhar">
-    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start a Project | Our Edge Media Gorakhpur</title>
+    <meta name="description" content="Register your brand or channel with Our Edge Media, Gorakhpur. Choose per-project or monthly video editing and social media management and we&#x27;ll call you back.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://ouredgemedia.com/RegistrationForm.html">
+    <link rel="alternate" hreflang="en-IN" href="https://ouredgemedia.com/RegistrationForm.html">
+    <link rel="alternate" hreflang="x-default" href="https://ouredgemedia.com/RegistrationForm.html">
+    <meta name="author" content="Our Edge Media">
+    <meta name="geo.region" content="IN-UP">
+    <meta name="geo.placename" content="Gorakhpur">
+    <meta name="geo.position" content="26.7606;83.3732">
+    <meta name="ICBM" content="26.7606, 83.3732">
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Join Our Edge Media | Client Application & Registration">
-    <meta property="og:description" content="Start your content growth journey with Our Edge Media. Submit your project requirements.">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Our Edge Media">
+    <meta property="og:title" content="Start a Project | Our Edge Media Gorakhpur">
+    <meta property="og:description" content="Register your brand or channel with Our Edge Media, Gorakhpur. Choose per-project or monthly video editing and social media management and we&#x27;ll call you back.">
     <meta property="og:url" content="https://ouredgemedia.com/RegistrationForm.html">
-    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image" content="https://ouredgemedia.com/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Our Edge Media - Video Editing &amp; Social Media Agency in Gorakhpur">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Start a Project | Our Edge Media Gorakhpur">
+    <meta name="twitter:description" content="Register your brand or channel with Our Edge Media, Gorakhpur. Choose per-project or monthly video editing and social media management and we&#x27;ll call you back.">
+    <meta name="twitter:image" content="https://ouredgemedia.com/assets/images/og-image.jpg">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- AOS (Animate On Scroll) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- AGENCY CUSTOM CURSOR CSS & JS -->
-    <link rel="stylesheet" href="cursor.css">
-    <script src="cursor.js" defer></script>
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="format-detection" content="telephone=yes">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="alternate" type="text/plain" title="LLM summary" href="llms.txt">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        html {
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #0b0b0b;
-            padding: 85px 20px 40px;
-            position: relative;
-            overflow-x: clip;
-            overflow-y: visible;
-        }
-
-        /* Single unified modern scrollbar */
-        ::-webkit-scrollbar {
-            width: 9px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #0b0b0b;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #2a2a2a;
-            border-radius: 6px;
-            border: 2px solid #0b0b0b;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #FFD400;
-        }
-
-        /* ================= FLOATING SCROLL TO TOP BUTTON ================= */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 25px;
-            width: 54px;
-            height: 54px;
-            background: #121212;
-            color: #FFD400;
-            border: 4.5px solid #FFD400;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: 900;
-            cursor: pointer;
-            z-index: 99999;
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-            transform: translateY(20px) scale(0.85);
-            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 0 20px rgba(255, 212, 0, 0.75), 0 0 45px rgba(255, 212, 0, 0.35);
-        }
-
-        .back-to-top.show {
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-            transform: translateY(0) scale(1);
-        }
-
-        .back-to-top:hover {
-            transform: translateY(-5px) scale(1.1);
-            background: #181818;
-            box-shadow: 0 0 30px rgba(255, 212, 0, 0.95), 0 0 55px rgba(255, 212, 0, 0.55);
-            color: #FFD400;
-        }
-
-        .back-to-top:active {
-            transform: scale(0.94);
-        }
-
-        /* glowing yellow background */
-        body::before,
-        body::after {
-            content: "";
-            position: fixed;
-            width: 250px;
-            height: 250px;
-            background: #ffd700;
-            filter: blur(120px);
-            opacity: 0.25;
-            animation: float 6s infinite alternate;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        body::before {
-            top: -60px;
-            left: -60px;
-        }
-
-        body::after {
-            bottom: -60px;
-            right: -60px;
-            animation-delay: 2s;
-        }
-
-        @keyframes float {
-            from {
-                transform: translateY(0);
-            }
-
-            to {
-                transform: translateY(40px);
-            }
-        }
-
-        /* floating icons background */
-        .icon {
-            position: fixed;
-            font-size: 28px;
-            color: rgba(255, 215, 0, 0.2);
-            animation: floatIcons 10s linear infinite;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        @keyframes floatIcons {
-            0% {
-                transform: translateY(100vh) scale(0.8);
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-10vh) scale(1.2);
-                opacity: 0;
-            }
-        }
-
-        /* random positions */
-        .icon:nth-child(1) {
-            left: 10%;
-            animation-duration: 12s;
-        }
-
-        .icon:nth-child(2) {
-            left: 25%;
-            animation-duration: 9s;
-        }
-
-        .icon:nth-child(3) {
-            left: 40%;
-            animation-duration: 11s;
-        }
-
-        .icon:nth-child(4) {
-            left: 60%;
-            animation-duration: 8s;
-        }
-
-        .icon:nth-child(5) {
-            left: 75%;
-            animation-duration: 13s;
-        }
-
-        .icon:nth-child(6) {
-            left: 90%;
-            animation-duration: 10s;
-        }
-
-        .back-home-btn {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background: #FFD700;
-            color: #111;
-            text-decoration: none;
-            padding: 10px 22px;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 14px;
-            z-index: 99999;
-            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: .3s;
-            cursor: pointer;
-            border: none;
-            outline: none;
-        }
-
-        .back-home-btn:hover {
-            background: #fff;
-            transform: translateY(-2px);
-        }
-
-        .card {
-            position: relative;
-            width: min(100%, 400px);
-            padding: 32px 28px;
-            background: #111;
-            border-radius: 22px;
-            border: 1px solid rgba(255, 215, 0, 0.3);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.12);
-            z-index: 10;
-        }
-
-        h2 {
-            text-align: center;
-            color: #ffd700;
-            margin-bottom: 22px;
-            font-size: 26px;
-            font-weight: 800;
-        }
-
-        label {
-            font-size: 13px;
-            color: #eee;
-            font-weight: 600;
-            margin-bottom: 6px;
-            display: block;
-        }
-
-        input[type="text"],
-        input[type="tel"] {
-            width: 100%;
-            padding: 13px 15px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            background: #1b1b1b;
-            color: #fff;
-            outline: none;
-            font-size: 14px;
-            font-family: inherit;
-            transition: 0.3s;
-        }
-
-        input[type="text"]:focus,
-        input[type="tel"]:focus {
-            border-color: #ffd700;
-            box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
-            background: #202020;
-        }
-
-        .input-box {
-            margin-bottom: 16px;
-        }
-
-        .radio-group {
-            display: flex;
-            gap: 20px;
-            color: #fff;
-            font-size: 14px;
-            margin-top: 6px;
-        }
-
-        .radio-group label {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
-            font-weight: normal;
-        }
-
-        .radio-group input[type="radio"] {
-            accent-color: #FFD700;
-            cursor: pointer;
-            width: 16px;
-            height: 16px;
-        }
-
-        button[type="submit"] {
-            width: 100%;
-            padding: 14px;
-            margin-top: 10px;
-            border: none;
-            border-radius: 30px;
-            background: linear-gradient(45deg, #ffd700, #ffb800);
-            color: #111;
-            font-size: 16px;
-            font-weight: 800;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button[type="submit"]:hover {
-            transform: translateY(-2px);
-            background: #fff;
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 75px 15px 30px;
-            }
-
-            .card {
-                padding: 26px 20px;
-            }
-
-            .back-home-btn {
-                top: 15px;
-                left: 15px;
-                padding: 8px 16px;
-                font-size: 13px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <a href="javascript:void(0);" onclick="goBack(event)" class="back-home-btn" aria-label="Back">
-        <i class="fa-solid fa-arrow-left"></i> Back
-    </a>
-
-    <!-- Floating Social Icons -->
-    <i class="fa-brands fa-whatsapp icon"></i>
-    <i class="fa-brands fa-instagram icon"></i>
-    <i class="fa-brands fa-facebook icon"></i>
-    <i class="fa-brands fa-youtube icon"></i>
-    <i class="fa-brands fa-telegram icon"></i>
-    <i class="fa-brands fa-twitter icon"></i>
-
-    <div class="card" data-aos="zoom-in" data-aos-duration="850">
-        <h2>Join Us</h2>
-
-        <form id="registrationForm" onsubmit="handleRegistrationSubmit(event)">
-            <div class="input-box">
-                <label>Name</label>
-                <input type="text" id="regName" placeholder="Enter your name" required>
-            </div>
-
-            <div class="input-box">
-                <label>Mobile Number</label>
-                <input type="tel" id="regMobile" placeholder="Enter mobile number" required>
-            </div>
-
-            <div class="input-box">
-                <label>Location</label>
-                <input type="text" id="regLocation" placeholder="Your city/location" required>
-            </div>
-
-            <div class="input-box">
-                <label>Brand Name</label>
-                <input type="text" id="regBrand" placeholder="Your brand or channel name" required>
-            </div>
-
-            <div class="input-box">
-                <label>Work Type</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="work" value="Freelancing" checked> Freelancing</label>
-                    <label><input type="radio" name="work" value="Monthly"> Monthly</label>
-                </div>
-            </div>
-
-            <button type="submit" id="regSubmitBtn">Submit Application</button>
-        </form>
-    </div>
-
-    <!-- ================= FLOATING BACK TO TOP ================= -->
-    <button id="backToTop" class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Back to Top" title="Back to Top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- GOOGLE SHEET API SCRIPT -->
-    <script src="sheet-api.js"></script>
-
-    <!-- AOS SCRIPT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/site.css">
     <script>
-        // Handle Registration Form Submit to Google Sheet
-        async function handleRegistrationSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const submitBtn = document.getElementById("regSubmitBtn") || form.querySelector("button[type='submit']");
-            const originalText = submitBtn.innerHTML;
-
-            const name = document.getElementById("regName") ? document.getElementById("regName").value.trim() : "";
-            const mobile = document.getElementById("regMobile") ? document.getElementById("regMobile").value.trim() : "";
-            const location = document.getElementById("regLocation") ? document.getElementById("regLocation").value.trim() : "";
-            const brand = document.getElementById("regBrand") ? document.getElementById("regBrand").value.trim() : "";
-            const workRadio = document.querySelector('input[name="work"]:checked');
-            const workType = workRadio ? workRadio.value : "Freelancing";
-
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
-
-            const payload = {
-                formType: "registration",
-                name: name,
-                mobile: mobile,
-                location: location,
-                brand: brand,
-                workType: workType
-            };
-
-            const saved = await sendToGoogleSheet(payload);
-
-            if (saved) {
-                submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Submitted!';
-                alert("Application submitted successfully! Your details have been saved.");
-                form.reset();
-            } else {
-                submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Received!';
-                alert("Application submitted! Our team will contact you soon.");
-                form.reset();
-            }
-
-            setTimeout(() => {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-            }, 3000);
-        }
-
-        if (typeof AOS !== 'undefined') {
-            AOS.init({
-                duration: 850,
-                easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
-                once: false
-            });
-        }
-
-        // Back navigation (-1 in history with fallback to home)
-        function goBack(e) {
-            if (e) e.preventDefault();
-            if (window.history.length > 1) {
-                window.history.go(-1);
-            } else {
-                window.location.href = 'index.html';
-            }
-        }
-
-        // Back to top scroll handler
-        const btt = document.getElementById("backToTop");
-        window.addEventListener("scroll", () => {
-            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-            if (btt) {
-                if (winScroll > 150) btt.classList.add("show");
-                else btt.classList.remove("show");
-            }
-        }, { passive: true });
+        /* Hide animated elements only when motion is allowed; reveal anyway if GSAP fails to load */
+        (function (d) {
+            if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+            d.classList.add("motion");
+            var nav = null, seen = null;
+            try { nav = sessionStorage.getItem("oem-nav"); seen = sessionStorage.getItem("oem-seen"); } catch (e) {}
+            if (nav || !seen) d.classList.add("curtain-on");      /* arriving from another page, or first visit */
+            if (!seen) d.classList.add("curtain-intro");
+            setTimeout(function () { d.classList.add("motion-failsafe"); }, 3500);
+        })(document.documentElement);
     </script>
 
-</body>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://ouredgemedia.com/RegistrationForm.html#webpage",
+      "url": "https://ouredgemedia.com/RegistrationForm.html",
+      "name": "Start a Project | Our Edge Media Gorakhpur",
+      "description": "Register your brand or channel with Our Edge Media, Gorakhpur. Choose per-project or monthly video editing and social media management and we'll call you back.",
+      "inLanguage": "en-IN",
+      "isPartOf": {
+        "@id": "https://ouredgemedia.com/#website"
+      },
+      "about": {
+        "@id": "https://ouredgemedia.com/#agency"
+      },
+      "breadcrumb": {
+        "@id": "https://ouredgemedia.com/RegistrationForm.html#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://ouredgemedia.com/assets/images/og-image.jpg"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ouredgemedia.com/RegistrationForm.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ouredgemedia.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Start a project",
+          "item": "https://ouredgemedia.com/RegistrationForm.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+<div class="curtain" aria-hidden="true" data-map='{"index.html": ["Chapter 01", "Home"], "services.html": ["Chapter 02", "Services"], "Portfolio.html": ["Chapter 03", "Our Work"], "Pricing.html": ["Chapter 04", "Pricing"], "OurTeam.html": ["Chapter 05", "Team"], "about.html": ["Chapter 06", "About & Contact"], "RegistrationForm.html": ["Chapter 07", "Start a project"], "blog/": ["Chapter 08", "Blog"], "video-editing-services-gorakhpur.html": ["Deep dive", "Video Editing"], "social-media-marketing-gorakhpur.html": ["Deep dive", "Social Media Marketing"], "reels-editing-gorakhpur.html": ["Deep dive", "Instagram Reels Editing"], "ad-video-production-gorakhpur.html": ["Deep dive", "Ad & Promo Videos"], "graphic-design-gorakhpur.html": ["Deep dive", "Graphic Design"], "local-seo-gorakhpur.html": ["Deep dive", "Local SEO & Google Maps"]}'>
+    <div class="curtain-panel curtain-yellow"></div>
+    <div class="curtain-panel curtain-black">
+        <div class="curtain-inner">
+            <img class="curtain-logo" src="assets/images/logo-mark.webp" alt="" width="64" height="64">
+            <span class="curtain-num">Chapter 07</span>
+            <span class="curtain-title">Start a project</span>
+            <span class="curtain-line">Your chapter</span>
+        </div>
+    </div>
+</div>
+<div class="read-progress" aria-hidden="true"><span></span></div>
+<a class="skip-link" href="#main">Skip to content</a>
 
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="" aria-label="Our Edge Media home">
+            <img class="brand-mark" src="assets/images/logo-mark.webp" alt="" width="40" height="40">
+            <span class="brand-text">Our Edge Media<small>Gorakhpur</small></span>
+        </a>
+        <nav class="nav-desktop" aria-label="Main">
+            <ul>
+                <li class="has-dd">
+                    <a href="services.html">Services</a>
+                    <button class="dd-toggle" type="button" aria-expanded="false" aria-controls="ddServices" aria-label="Show services menu"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+                    <div class="dd" id="ddServices">
+                        <ul><li><a href="video-editing-services-gorakhpur.html"><span class="dd-ic"><i class="fa-solid fa-film" aria-hidden="true"></i></span><span><b>Video Editing</b><small>Reels, YouTube, ads & business videos</small></span></a></li><li><a href="social-media-marketing-gorakhpur.html"><span class="dd-ic"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span><span><b>Social Media Marketing</b><small>Monthly management & growth</small></span></a></li><li><a href="reels-editing-gorakhpur.html"><span class="dd-ic"><i class="fa-solid fa-fire" aria-hidden="true"></i></span><span><b>Instagram Reels Editing</b><small>Hook-first Reels & Shorts</small></span></a></li><li><a href="ad-video-production-gorakhpur.html"><span class="dd-ic"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></span><span><b>Ad & Promo Videos</b><small>Ads that bring calls & walk-ins</small></span></a></li><li><a href="graphic-design-gorakhpur.html"><span class="dd-ic"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></span><span><b>Graphic Design</b><small>Posts, banners & brand identity</small></span></a></li><li><a href="local-seo-gorakhpur.html"><span class="dd-ic"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></span><span><b>Local SEO & Google Maps</b><small>Rank in Gorakhpur searches</small></span></a></li></ul>
+                        <a class="dd-all" href="services.html">All services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Portfolio.html">Our Work</a></li>
+                <li><a href="OurTeam.html">Team</a></li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="btn btn-primary header-cta" href="about.html#contact">Get a free quote</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+    </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav-backdrop" data-close-nav></div>
+    <nav class="mobile-nav-panel" aria-label="Mobile">
+        <div class="mobile-nav-top">
+            <a class="brand" href=""><img class="brand-mark" src="assets/images/logo-mark.webp" alt="" width="40" height="40"><span class="brand-text">Our Edge Media</span></a>
+            <button class="menu-toggle" type="button" aria-label="Close menu" data-close-nav style="display:grid"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+        <ul>
+                <li><a href="">Home<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="services.html">Services<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a><ul class="mob-sub"><li><a href="video-editing-services-gorakhpur.html">Video Editing</a></li><li><a href="social-media-marketing-gorakhpur.html">Social Media Marketing</a></li><li><a href="reels-editing-gorakhpur.html">Instagram Reels Editing</a></li><li><a href="ad-video-production-gorakhpur.html">Ad & Promo Videos</a></li><li><a href="graphic-design-gorakhpur.html">Graphic Design</a></li><li><a href="local-seo-gorakhpur.html">Local SEO & Google Maps</a></li></ul></li>
+                <li><a href="Pricing.html">Pricing<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="Portfolio.html">Our Work<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="OurTeam.html">Team<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="blog/">Blog<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="about.html">About<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="mobile-nav-foot">
+            <a class="btn btn-primary btn-block" href="about.html#contact" data-close-nav>Get a free quote</a>
+            <a class="btn btn-wa btn-block" href="https://wa.me/919196497565" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp us</a>
+            <p>Mon–Sat, 10 AM – 8 PM · Golghar, Gorakhpur</p>
+        </div>
+    </nav>
+</div>
+<main id="main">
+
+<section class="page-hero">
+    <div class="container">
+        <ol class="breadcrumb"><li><a href="./">Home</a></li><li aria-current="page">Start a project</li></ol>
+        <span class="eyebrow">Start a project</span>
+        <h1>Work with Our Edge Media</h1>
+        <p>Register your brand or channel and our team will call you to understand your goals. It takes less than a minute.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container grid grid-2" style="align-items:start;gap:40px">
+        <div class="reveal">
+            <h2 style="font-size:1.6rem">What happens next?</h2>
+            <ol class="process mt-6" style="grid-template-columns:1fr;counter-reset:step">
+                <li style="background:var(--surface);border-color:var(--border)"><h3>We call you</h3><p class="muted">Within one working day, someone from our team calls you on the number you share.</p></li>
+                <li style="background:var(--surface);border-color:var(--border)"><h3>We understand your brand</h3><p class="muted">Your products, customers, competitors and what you want to achieve.</p></li>
+                <li style="background:var(--surface);border-color:var(--border)"><h3>You get a plan &amp; quote</h3><p class="muted">A clear content plan with pricing, freelance per project or monthly.</p></li>
+            </ol>
+            <p class="muted mt-6">Prefer to talk now? <a href="https://wa.me/919196497565" target="_blank" rel="noopener">WhatsApp us</a> or call <a href="tel:+919196497565">+91 91964 97565</a>.</p>
+        </div>
+
+        <form id="registrationForm" class="form-card reveal" onsubmit="handleRegistrationSubmit(event)" style="position:relative">
+            <h2 style="font-size:1.35rem">Your details</h2>
+            <p class="muted mt-2" style="margin-bottom:22px">All fields are required.</p>
+            <div class="form-grid">
+                <div class="field"><label for="regName">Name</label><input type="text" id="regName" autocomplete="name" maxlength="100" required></div>
+                <div class="field"><label for="regMobile">Mobile number</label><input type="tel" id="regMobile" autocomplete="tel" inputmode="tel" pattern="[0-9+\s\(\)\-]{7,20}" maxlength="20" placeholder="+91" required></div>
+                <div class="field"><label for="regLocation">City / location</label><input type="text" id="regLocation" autocomplete="address-level2" maxlength="100" placeholder="e.g. Gorakhpur" required></div>
+                <div class="field"><label for="regBrand">Brand or channel name</label><input type="text" id="regBrand" autocomplete="organization" maxlength="120" required></div>
+                <fieldset class="field" style="border:0;padding:0;margin:0">
+                    <legend class="label">How would you like to work with us?</legend>
+                    <div class="radio-cards">
+                        <label><input type="radio" name="work" value="Freelancing" checked> Per project</label>
+                        <label><input type="radio" name="work" value="Monthly"> Monthly plan</label>
+                    </div>
+                </fieldset>
+            </div>
+            <input type="text" id="regWebsite" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" id="regSubmitBtn" class="btn btn-primary btn-block mt-6">Submit application <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            <p class="form-note"><i class="fa-solid fa-lock" aria-hidden="true"></i>We'll only use your number to discuss your project.</p>
+        </form>
+    </div>
+</section>
+
+<section class="next-chapter" aria-label="Next chapter">
+    <a class="next-link" href="blog/">
+        <span class="next-kicker"><span class="next-dot"></span> Next · Chapter 08</span>
+        <span class="next-title">Blog</span>
+        <span class="next-line">Keep learning <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></span>
+    </a>
+</section>
+
+</main>
+
+<footer class="site-footer flush">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <a class="footer-logo" href="" aria-label="Our Edge Media home"><img src="assets/images/logo-full-light.webp" alt="Our Edge Media - Your growth, our edge" width="520" height="456" loading="lazy" decoding="async"></a>
+                <p class="footer-about">Video editing, Reels, ad films, graphic design and social media management for businesses and creators in Gorakhpur and across India.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/919196497565" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/ouredgemedia/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="mailto:ouredgemedia@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://maps.app.goo.gl/vgLReNCvaMgz1bqB9" target="_blank" rel="noopener" aria-label="Google Maps location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div>
+                <h2>Company</h2>
+                <ul class="footer-links">
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="OurTeam.html">Our team</a></li>
+                    <li><a href="Portfolio.html">Our work</a></li>
+                    <li><a href="blog/">Blog</a></li>
+                    <li><a href="RegistrationForm.html">Start a project</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Services in Gorakhpur</h2>
+                <ul class="footer-links">
+                    <li><a href="video-editing-services-gorakhpur.html">Video Editing</a></li><li><a href="social-media-marketing-gorakhpur.html">Social Media Marketing</a></li><li><a href="reels-editing-gorakhpur.html">Instagram Reels Editing</a></li><li><a href="ad-video-production-gorakhpur.html">Ad & Promo Videos</a></li><li><a href="graphic-design-gorakhpur.html">Graphic Design</a></li><li><a href="local-seo-gorakhpur.html">Local SEO & Google Maps</a></li>
+                    <li><a href="Pricing.html">Pricing &amp; packages</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Visit or call</h2>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><a href="https://maps.app.goo.gl/vgLReNCvaMgz1bqB9" target="_blank" rel="noopener">Bank Road, Golghar (near St. Andrew's College), Gorakhpur, Uttar Pradesh 273001</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+919196497565">+91 91964 97565</a></li>
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:ouredgemedia@gmail.com">ouredgemedia@gmail.com</a></li>
+                    <li><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Mon – Sat: 10:00 AM – 8:00 PM IST</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span data-year>2026</span> Our Edge Media, Gorakhpur. All rights reserved.</span>
+            <span>Designed &amp; developed by Abhishek Rajbhar</span>
+        </div>
+    </div>
+</footer>
+
+<div class="fab-stack">
+    <button class="to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+    <a class="fab fab-wa" href="https://wa.me/919196497565" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    <button class="fab fab-chat" type="button" aria-label="Open quick help chat" aria-expanded="false" aria-controls="chatPanel"><i class="fa-regular fa-comment-dots" aria-hidden="true"></i></button>
+</div>
+
+<div class="chat-panel" id="chatPanel" role="dialog" aria-label="Quick help" aria-hidden="true">
+    <div class="chat-head">
+        <span class="av" aria-hidden="true"><i class="fa-solid fa-headset"></i></span>
+        <div><b>Quick help</b><small>Our Edge Media · usually replies instantly</small></div>
+        <button class="chat-close" type="button" aria-label="Close chat"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="chat-body" aria-live="polite">
+        <div class="chat-msg bot">Namaste! How can we help? Tap a question or type your own.</div>
+        <div class="chat-quick">
+            <button type="button">Pricing</button>
+            <button type="button">Delivery time</button>
+            <button type="button">Services</button>
+            <button type="button">Office location</button>
+        </div>
+    </div>
+    <form class="chat-form">
+        <label class="sr-only" for="chatInput">Your question</label>
+        <input id="chatInput" type="text" placeholder="Ask anything…" autocomplete="off" maxlength="300">
+        <button type="submit" aria-label="Send"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="sheet-api.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/motion.js" defer></script>
+<script>
+async function handleRegistrationSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const btn = document.getElementById("regSubmitBtn");
+    const original = btn.innerHTML;
+    const val = (id) => (document.getElementById(id) ? document.getElementById(id).value.trim() : "");
+    if (val("regWebsite")) { form.reset(); return; }
+    const name = val("regName");
+    const work = document.querySelector('input[name="work"]:checked');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Submitting…';
+    const saved = await sendToGoogleSheet({
+        formType: "registration",
+        name: name,
+        mobile: val("regMobile"),
+        location: val("regLocation"),
+        brand: val("regBrand"),
+        workType: work ? work.value : "Freelancing"
+    });
+    btn.disabled = false;
+    btn.innerHTML = original;
+    if (saved) {
+        form.reset();
+        showFormPopup("success", "Application submitted!", "Thank you" + (name ? ", " + name : "") + "! Your details have been received. Our team will contact you on your mobile number soon.");
+    } else {
+        showFormPopup("error", "Couldn't submit", "Something went wrong while sending your application. Your details are still in the form, so please try again, or message us directly on WhatsApp.");
+    }
+}
+</script>
+</body>
 </html>
